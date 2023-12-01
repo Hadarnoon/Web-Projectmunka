@@ -19,9 +19,9 @@
         p,h1,h2,h3{
           color: white;
         }
-        img{
-          width: 300px;
-          height: 400px;
+        #imgg{
+          width: 400px;
+          height: 500px;
           border: 10px solid #f8d800;
         }
         main{
@@ -29,6 +29,32 @@
         }
         .row{
           margin: 50px;
+        }
+        div.scroll-container {
+        background-color: #333;
+        overflow: auto;
+        white-space: nowrap;
+        padding: 10px;
+         }
+
+        div.scroll-container img {
+          padding: 10px;
+          width: 500px;
+        }
+        .scroll-container{
+          margin-bottom: 50px;
+        }
+        footer {
+          background-color: #777;
+          padding: 10px;
+          text-align: center;
+          color: white;
+        }
+        #gallery{
+          color: white;
+        }
+        #szoveg{
+          font-size: larger;
         }
 
     </style>
@@ -65,52 +91,36 @@
     <div class="container text-center">
       <div class="row">
         <div class="col">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus at, explicabo accusamus consequuntur dolores veritatis ducimus facilis saepe, voluptas voluptatibus impedit nisi facere laboriosam nihil, animi minima necessitatibus officiis maiores? Excepturi necessitatibus eum corrupti nemo doloremque. Totam, voluptatem consectetur accusamus qui nemo ullam ut odit eos deserunt obcaecati tempora deleniti necessitatibus ipsa sed quidem laborum enim, numquam culpa. Cupiditate rem dolorem qui inventore ab esse nam! Unde debitis dolor doloribus.</p>
+          <p id="szoveg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus at, explicabo accusamus consequuntur dolores veritatis ducimus facilis saepe, voluptas voluptatibus impedit nisi facere laboriosam nihil, animi minima necessitatibus officiis maiores? Excepturi necessitatibus eum corrupti nemo doloremque. Totam, voluptatem consectetur accusamus qui nemo ullam ut odit eos deserunt obcaecati tempora deleniti necessitatibus ipsa sed quidem laborum enim, numquam culpa. Cupiditate rem dolorem qui inventore ab esse nam! Unde debitis dolor doloribus.</p>
         </div>
         <div class="col">
-          <img src="img/karancsvendeghaz.jpg" alt="">
+          <img src="img/karancsvendeghaz.jpg" alt="" id="imgg">
         </div>
       </div>
-      <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
-          <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
-          <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active">
-            <img src="img/vendeghaz11.jpg" class="w-100 d-block" alt="First slide">
-          </div>
-          <div class="carousel-item">
-            <img src="img/vendeghaz12.jpg" class="w-100 d-block" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img src="img/vendeghaz2.jpg" class="w-100 d-block" alt="Third slide">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-          </button>
-      </div>
-        </div>
         <div class="container text-center">
           <div class="row">
             <div class="col">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus at, explicabo accusamus consequuntur dolores veritatis ducimus facilis saepe, voluptas voluptatibus impedit nisi facere laboriosam nihil, animi minima necessitatibus officiis maiores? Excepturi necessitatibus eum corrupti nemo doloremque. Totam, voluptatem consectetur accusamus qui nemo ullam ut odit eos deserunt obcaecati tempora deleniti necessitatibus ipsa sed quidem laborum enim, numquam culpa. Cupiditate rem dolorem qui inventore ab esse nam! Unde debitis dolor doloribus.</p>
+              <img src="img/kajoilbenzin.jpg" alt="" id="imgg">
             </div>
             <div class="col">
-              <img src="img/karancsvendeghaz.jpg" alt="">
+              <p id="szoveg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus at, explicabo accusamus consequuntur dolores veritatis ducimus facilis saepe, voluptas voluptatibus impedit nisi facere laboriosam nihil, animi minima necessitatibus officiis maiores? Excepturi necessitatibus eum corrupti nemo doloremque. Totam, voluptatem consectetur accusamus qui nemo ullam ut odit eos deserunt obcaecati tempora deleniti necessitatibus ipsa sed quidem laborum enim, numquam culpa. Cupiditate rem dolorem qui inventore ab esse nam! Unde debitis dolor doloribus.</p>
             </div>
+          </div>
+          <h1 id="gallery">Galéria:</h1>
+          <div class="scroll-container">
+            
+            <img src="img/vendeghaz1.jpg" alt="vendeghaz1">
+            <img src="img/vendeghaz11.jpg" alt="vendeghaz11">
+            <img src="img/vendeghaz12.jpg" alt="vendeghaz12">
+            <img src="img/vendeghaz2.jpg" alt="vendeghaz2">
+            <img src="img/vendeghaz8.jpg" alt="vendeghaz8">
+            <img src="img/vendeghaz7.jpg" alt="vendeghaz7">
+            <img src="img/vendeghaz9.jpg" alt="vendeghaz9">
           </div>
 
   </main>
   <footer>
-  
+     Kajoil 2023 ©
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
