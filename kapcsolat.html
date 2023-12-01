@@ -2,7 +2,7 @@
 <html lang="hu">
 
 <head>
-  <title>Kajoil | Vendégház</title>
+  <title>Kajoil | Kapcsolat</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <style>
@@ -24,6 +24,18 @@
           padding: 10px;
           text-align: center;
           color: white;
+        }
+        main{
+          color: white;
+          text-align: center;
+        }
+        .mb-3{
+          margin-left: 33%;
+          margin-right: 33%;
+        }
+        #uzenet{
+          margin-top: 100px;
+          margin-bottom: 50px;
         }
 
     </style>
@@ -57,7 +69,24 @@
       </nav>
   </header>
   <main>
+    <h1 id="cim">Elérhetőségeink:</h1>
+    <h2>Telefonszám: +3630303030</h2>
+    <h2>Email: kajoil.kut@gmail.com</h2>
+    <h2>Cím: 3182 Karancslapujtő, Sport út 1.</h2>
 
+    <h1 id="uzenet">Küldj üzenetet nekünk</h1>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Név</label>
+      <input type="text" class="form-control" id="nev">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Email cím</label>
+      <input type="email" class="form-control" id="email" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Üzenet</label>
+      <textarea class="form-control" id="uzenet" rows="3"></textarea>
+    </div>
   </main>
   <footer>
     Kajoil 2023 ©
