@@ -28,29 +28,27 @@
       margin-top: 50px;
       border: 10px solid #f8d800;
     }
-    .atszalado
+    .carousel-inner h1
     {
-      background: #f8d800;
-      padding: 25px;
-      margin-top: 15px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.2);
+      margin: 0;
+      padding: 10px;
     }
-    .items
+    .col h2
     {
-      justify-content: center;
-      display: flex;
+      color: #f8d800;      
     }
-    .item
+    .boxok
     {
-      display: flex;
-      flex-direction: column;
+      background-color: #f8d800;
     }
-    .item-text, .item-img
-    {
-      
-    }
-    .item p 
-    {
-      font-size: 30px;
+    footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        margin-top: 15px;
     }
   </style>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -85,60 +83,226 @@
   </header>
 
   <main>
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-          <img src="img/benzinkút.jpg" class="d-block w-100" alt="...">
+    <div class="container">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <h1 class="kep-kozep">Kajoil Kft.</h1>
+            <img src="img/benzinkút.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <h1 class="kep-kozep">Kajoil Kft.</h1>
+            <img src="img/kút.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <h1 class="kep-kozep">Kajoil Kft.</h1>
+            <img src="img/kútfejek.jpg" class="d-block w-100" alt="...">
+          </div>
         </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="img/kút.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="img/kútfejek.jpg" class="d-block w-100" alt="...">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  
+      <br>
+      <div class="row">
+        <div class="col">
+          <h2 class="display-6 mb-4">Kaphatók a kúton</h2>
+  
+          <div class="row">
+            <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+              <div class="card h-100">
+                <a href="#"><img src="img/keverek-benzin.jpg" class="card-img-top" alt=""></a>
+                <div class="card-body">
+                  <h3 class="h6 mb-3 card-title lh-base text-center">STIHL HP 1.0 L</h3>
+                  <div class="row align-items-center">
+                    <div class="text-center text-danger fw-bold">
+                      6999 Ft
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="text-decoration-none text-secondary small">2T Keverék olaj</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+              <div class="card h-100">
+                <a href="#"><img src="img/4T-olaj.jpg" class="card-img-top" alt=""></a>
+                <div class="card-body">
+                  <h3 class="h6 mb-3 card-title lh-base text-center">HECHT 5W-40 0.8 L</h3>
+                  <div class="row align-items-center">
+                    <div class="text-center text-danger fw-bold">
+                      3490 Ft
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="text-decoration-none text-secondary small">4T Keverék olaj</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+              <div class="card h-100">
+                <a href="#"><img src="img/wd40.jpg" class="card-img-top" alt=""></a>
+                <div class="card-body">
+                  <h3 class="h6 mb-3 card-title lh-base text-center">WD-40 100 ml</h3>
+                  <div class="row align-items-center">
+                    <div class="text-center text-danger fw-bold">
+                      1390 Ft
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="text-decoration-none text-secondary small">Univerzális kenőanyag</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+              <div class="card h-100">
+                <a href="#"><img src="img/kanna.jpg" class="card-img-top" alt=""></a>
+                <div class="card-body">
+                  <h3 class="h6 mb-3 card-title lh-base text-center">Hecht üzemanyag kanna 20 L</h3>
+                  <div class="row align-items-center">
+                    <div class="text-center text-danger fw-bold">
+                      5790 Ft
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="text-decoration-none text-secondary small">Üzemanyag kanna</a>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+            
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+      <div class="row">
+        <div class="col">
+            <br>
+          <div class="row">
+            <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+              <div class="card h-100">
+                <a href="#"><img src="img/hell.png" class="card-img-top" alt=""></a>
+                <div class="card-body">
+                  <h3 class="h6 mb-3 card-title lh-base text-center">Hell 250 ml</h3>
+                  <div class="row align-items-center">
+                    <div class="text-center text-danger fw-bold">
+                      349 Ft
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="text-decoration-none text-secondary small">Energi ital</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+              <div class="card h-100">
+                <a href="#"><img src="img/makos.png" class="card-img-top" alt=""></a>
+                <div class="card-body">
+                  <h3 class="h6 mb-3 card-title lh-base text-center">Mákos rétes</h3>
+                  <div class="row align-items-center">
+                    <div class="text-center text-danger fw-bold">
+                      249 Ft
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="text-decoration-none text-secondary small">Pékáru</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+              <div class="card h-100">
+                <a href="#"><img src="img/borsodi.png" class="card-img-top" alt=""></a>
+                <div class="card-body">
+                  <h3 class="h6 mb-3 card-title lh-base text-center">Borsodi dobozos sör</h3>
+                  <div class="row align-items-center">
+                    <div class="text-center text-danger fw-bold">
+                      349 Ft
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="text-decoration-none text-secondary small">Szeszesital</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+              <div class="card h-100">
+                <a href="#"><img src="img/gyerek-ules.png" class="card-img-top" alt=""></a>
+                <div class="card-body">
+                  <h3 class="h6 mb-3 card-title lh-base text-center">Racer SP gyerekülés</h3>
+                  <div class="row align-items-center">
+                    <div class="text-center text-danger fw-bold">
+                      19990 Ft
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="text-decoration-none text-secondary small">Gyerekülés</a>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+            
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col">
+          <h2 class="display-6 mb-4">Információk</h2>
+  
+          <div class="row">
+            <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+              <div class="boxok rounded text-center p-3 h-100">
+                <img src="svgs/truck.svg" alt="">
+                <p class="h5 mt-2 mb-4">Beszállítónk adatai</p>
+                <a href="#" class="btn btn-dark">Elolvasom</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+              <div class="boxok rounded text-center p-3 h-100">
+                <img src="svgs/credit-card-2-back.svg" alt="">
+                <p class="h5 mt-2 mb-4">Fizetési feltételek</p>
+                <a href="#" class="btn btn-dark">Elolvasom</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+              <div class="boxok rounded text-center p-3 h-100">
+                <img src="svgs/shield-check.svg" alt="">
+                <p class="h5 mt-2 mb-4">Biztonságos vásárlás</p>
+                <a href="#" class="btn btn-dark">Elolvasom</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+              <div class="boxok rounded text-center p-3 h-100">
+                <img src="svgs/file-earmark-text.svg" alt="">
+                <p class="h5 mt-2 mb-4">Vásárlási feltételek</p>
+                <a href="#" class="btn btn-dark">Elolvasom</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
-      <div class="atszalado">
-        <div class="items">
-          <div class="item">
-            <div class="item-img">
-              <a href=""><img src="img/icon-promotion.88d641cf.svg" alt=""></a>
-            </div>
-            <div class="item-text">
-              <p>Promóciók</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="item-img">
-              <a href=""><img src="img/icon-isa-fuel.bca8b5d2.svg" alt=""></a>
-            </div>
-              <div class="item-text">
-                <p>Beszállítónk</p>
-              </div>
-          </div>
-          <div class="item">
-            <div class="item-img">
-              <a href=""><img src="img/icon-station-charge.038a80cf.svg" alt=""></a>
-            </div>
-              <div class="item-text">
-                <p>Térkép</p>
-              </div>
-          </div>
-        </div>
-      </div>
+
     </div>
+
   </main>
   <footer>
-    <!-- place footer here -->
+    Kajoil 2023 ©
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -148,6 +312,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
   </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
